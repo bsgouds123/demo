@@ -17,4 +17,4 @@ in order to unset the password
 git config credential.helper 'cache --timeout=1'
 in order to avoid credentials cache...
 
-Nothing seems to work; does anyone have a better idea?
+
