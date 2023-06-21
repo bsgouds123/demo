@@ -1,0 +1,20 @@
+I'm working with several repositories, but lately I was just working in our internal one and all was great.
+
+Today I had to commit and push code into other one, but I'm having some troubles.
+
+$ git push appharbor master
+error: The requested URL returned error: 403 while accessing https://gavekortet@appharbor.com/mitivo.git/info/refs?service=git-receive-pack
+fatal: HTTP request failed
+There is nothing I can do, that would bring the password entry again.
+
+How can I reset the credentials on my system so Git will ask me for the password of that repository?
+
+I have tried:
+
+git config --global --unset core.askpass
+in order to unset the password
+
+git config credential.helper 'cache --timeout=1'
+in order to avoid credentials cache...
+
+Nothing seems to work; does anyone have a better idea?
